@@ -1,0 +1,16 @@
+
+use_frameworks!
+
+target 'Beacon' do
+pod 'EstimoteSDK'
+pod 'Alamofire', '~> 3.0'
+pod 'AlamofireObjectMapper', '~> 2.0'
+pod 'SwiftyJSON'
+pod 'Timepiece'
+pod 'RealmSwift'
+pod 'KeychainSwift', '~> 3.0'
+pod 'DGElasticPullToRefresh'
+
+
+end
+

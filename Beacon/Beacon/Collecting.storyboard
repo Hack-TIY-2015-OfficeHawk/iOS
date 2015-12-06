@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9527.1" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9525.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Cubano-Regular.otf">
+            <string>Cubano-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HBViewController" customModule="Beacon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="COLD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9J-e8-dqt">
+                                <rect key="frame" x="36" y="38" width="342" height="50"/>
+                                <fontDescription key="fontDescription" name="Cubano-Regular" family="Cubano" pointSize="49"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYw-lz-dQV" customClass="HBAccuracyView" customModule="Beacon" customModuleProvider="target">
+                                <rect key="frame" x="-30" y="130" width="474" height="474"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beacon_green" translatesAutoresizingMaskIntoConstraints="NO" id="6hZ-fw-eHC">
+                                        <rect key="frame" x="137" y="137" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="BvA-2a-IQc"/>
+                                            <constraint firstAttribute="width" secondItem="6hZ-fw-eHC" secondAttribute="height" multiplier="1:1" id="Gpg-Vs-TZK"/>
+                                            <constraint firstAttribute="height" constant="200" id="Vtw-vH-7rB"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="6hZ-fw-eHC" firstAttribute="centerY" secondItem="TYw-lz-dQV" secondAttribute="centerY" id="FmI-af-lFc"/>
+                                    <constraint firstItem="6hZ-fw-eHC" firstAttribute="centerX" secondItem="TYw-lz-dQV" secondAttribute="centerX" id="Qno-HC-JVg"/>
+                                    <constraint firstAttribute="trailing" secondItem="6hZ-fw-eHC" secondAttribute="trailing" constant="136" id="XgA-hB-9Bk"/>
+                                    <constraint firstAttribute="width" secondItem="TYw-lz-dQV" secondAttribute="height" multiplier="1:1" id="aZ3-TN-0ui"/>
+                                    <constraint firstItem="6hZ-fw-eHC" firstAttribute="leading" secondItem="TYw-lz-dQV" secondAttribute="leading" constant="138" id="dDR-iW-13H"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XgA-hB-9Bk"/>
+                                        <exclude reference="dDR-iW-13H"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vVf-1v-chR">
+                                <rect key="frame" x="20" y="656" width="374" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beacon_grey" translatesAutoresizingMaskIntoConstraints="NO" id="trL-6f-P3e">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="60"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beacon_grey" translatesAutoresizingMaskIntoConstraints="NO" id="MRN-35-HCi">
+                                        <rect key="frame" x="64" y="0.0" width="56" height="60"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beacon_grey" translatesAutoresizingMaskIntoConstraints="NO" id="z53-xF-f5b">
+                                        <rect key="frame" x="128" y="0.0" width="56" height="60"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beacon_grey" translatesAutoresizingMaskIntoConstraints="NO" id="zxh-un-Z12">
+                                        <rect key="frame" x="191" y="0.0" width="56" height="60"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beacon_grey" translatesAutoresizingMaskIntoConstraints="NO" id="X4h-iz-cSH">
+                                        <rect key="frame" x="255" y="0.0" width="56" height="60"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beacon_grey" translatesAutoresizingMaskIntoConstraints="NO" id="l30-lO-DBa">
+                                        <rect key="frame" x="319" y="0.0" width="56" height="60"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RFe-yh-b9Y"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TYw-lz-dQV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nxb-1s-f32"/>
+                            <constraint firstItem="TYw-lz-dQV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-1" id="OCl-Nb-b7j"/>
+                            <constraint firstAttribute="trailing" secondItem="TYw-lz-dQV" secondAttribute="trailing" constant="-30" id="Rn9-K8-PN3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vVf-1v-chR" secondAttribute="bottom" constant="20" id="Rp5-PC-9h3"/>
+                            <constraint firstItem="TYw-lz-dQV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-30" id="VyQ-HE-OPG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p9J-e8-dqt" secondAttribute="trailing" constant="16" id="ZN4-rG-8Vv"/>
+                            <constraint firstItem="vVf-1v-chR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="a4P-4I-uXZ"/>
+                            <constraint firstItem="TYw-lz-dQV" firstAttribute="top" secondItem="p9J-e8-dqt" secondAttribute="bottom" constant="20" id="h7R-Ny-KLo"/>
+                            <constraint firstAttribute="trailing" secondItem="vVf-1v-chR" secondAttribute="trailing" constant="20" id="nPs-P0-H4x"/>
+                            <constraint firstItem="p9J-e8-dqt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="xRW-N9-ez1"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="accuracyView" destination="TYw-lz-dQV" id="WUA-FO-hSl"/>
+                        <outlet property="beaconImageView" destination="6hZ-fw-eHC" id="eF4-BU-hsf"/>
+                        <outlet property="beaconProximityLabel" destination="p9J-e8-dqt" id="rHT-tk-Y6E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="beacon_green" width="385" height="675"/>
+        <image name="beacon_grey" width="188" height="276"/>
+    </resources>
+</document>

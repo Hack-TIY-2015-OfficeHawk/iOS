@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (3.1.2)
+  - AlamofireObjectMapper (2.0.2):
+    - Alamofire (~> 3.1.0)
+    - ObjectMapper (~> 1.0)
+  - DGElasticPullToRefresh (1.0.3)
+  - EstimoteSDK (3.7.1)
+  - KeychainSwift (3.0.10)
+  - ObjectMapper (1.0.1)
+  - Realm (0.96.2):
+    - Realm/Headers (= 0.96.2)
+  - Realm/Headers (0.96.2)
+  - RealmSwift (0.96.2):
+    - Realm (= 0.96.2)
+  - SwiftyJSON (2.3.1)
+  - Timepiece (0.4.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - AlamofireObjectMapper (~> 2.0)
+  - DGElasticPullToRefresh
+  - EstimoteSDK
+  - KeychainSwift (~> 3.0)
+  - RealmSwift
+  - SwiftyJSON
+  - Timepiece
+
+SPEC CHECKSUMS:
+  Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
+  AlamofireObjectMapper: 3047127bcc25ec43e8243b89d819022ccee77546
+  DGElasticPullToRefresh: 040f39ae69840b3261d163fe6735c5901bf851e9
+  EstimoteSDK: 15d4cf50a4a1e41dcbb0c3cefd43207bed990d53
+  KeychainSwift: b3fcc33bd6e12778be79d9be27e0f2e369b8cc4e
+  ObjectMapper: 98524bac0dca46c6b3d5ee02cd410fc700ec6ce2
+  Realm: 3ce8448151c571e90b85002d984d7f93f54fc8a3
+  RealmSwift: 485599fe54e35461c4a0daa7d01d8fbf11424873
+  SwiftyJSON: 592b53bee5ef3dd9b3bebc6b9cb7ee35426ae8c3
+  Timepiece: cf53bb908bf542acc0e3d5f69cabfed869df4ebd
+
+COCOAPODS: 0.39.0
